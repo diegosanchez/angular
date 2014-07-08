@@ -1,9 +1,19 @@
-var myApp = angular.module('superhero', []); 
+var app = angular.module("superhero", [])
  
-myApp.directive( 'superman', function () {
+app.directive("superman", function(){
   return {
-    restrict: 'E',
-    template: "<div> Here I am to save the day </div>"
-  }
+   restrict: "A",
+   link: function(){
+       alert("I'm working stronger");
+     }
+  };
 });
-
+ 
+app.directive("flash", function(){
+  return {
+   restrict: "A",
+   link: function(){
+       alert("I'm working faster");
+     }
+  };
+}); 

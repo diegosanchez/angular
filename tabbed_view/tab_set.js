@@ -12,9 +12,7 @@ module.directive( 'myTabSet', function() {
     controller: function($scope) {
       $scope.tabs = [];
 
-      console.debug( $scope );
-
-      this.createTab = function( domTab) {
+      this.createTab = function(domTab) {
         return {
           title: domTab.attr( 'title' ),
           active: true
@@ -22,7 +20,16 @@ module.directive( 'myTabSet', function() {
       };
 
       this.addTab = function( domTab ) {
-        $scope.tabs.push( this.createTab(domTab) );
+        var new_tab = this.createTab(domTab);
+        console.debug( $scope.tabs.length );
+        new_tab.active = ( $scope.tabs.length == 0 ) ? true : false;
+
+        if ( new_tab.active ) {
+          console.debug( 'active' );
+          domTab.addClass( 'active' );
+        }
+
+        $scope.tabs.push( new_tab );
       };
     }
   };
@@ -34,7 +41,10 @@ module.directive( 'myTab', function() {
     require: '^myTabSet',
     replace: true,
     transclude: true,
-    template: '<div id="{{title}}" class="tab-pane active" ng-transclude></div>',
+    scope: { 
+      title: '@title'
+    },
+    template: '<div id="{{title}}" class="tab-pane" ng-transclude></div>',
     link: function(scope, element, attrs, tabSetCtrl) {
       tabSetCtrl.addTab( element );
     }

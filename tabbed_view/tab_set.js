@@ -6,10 +6,37 @@ module.directive( 'myTabSet', function() {
     replace: true,
     transclude: true,
     templateUrl: 'tab_set.html',
-    scope: { name: '@name' },
-    link: function(scope, element, attrs) {
-      console.debug( scope);
-      console.debug( scope.$parent );
+    scope: { 
+      name: '@name' 
+    },
+    controller: function($scope) {
+      $scope.tabs = [];
+
+      console.debug( $scope );
+
+      this.createTab = function( domTab) {
+        return {
+          title: domTab.attr( 'title' ),
+          active: true
+        };
+      };
+
+      this.addTab = function( domTab ) {
+        $scope.tabs.push( this.createTab(domTab) );
+      };
+    }
+  };
+});
+
+module.directive( 'myTab', function() {
+  return {
+    restrict: 'E',
+    require: '^myTabSet',
+    replace: true,
+    transclude: true,
+    template: '<div id="{{title}}" class="tab-pane active" ng-transclude></div>',
+    link: function(scope, element, attrs, tabSetCtrl) {
+      tabSetCtrl.addTab( element );
     }
   };
 });

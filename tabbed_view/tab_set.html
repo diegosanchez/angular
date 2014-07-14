@@ -1,8 +1,8 @@
 <div class="{{name}}_root">
   <ul class="nav nav-tabs" role="tablist" id="{{name}}">
-    <li class="active"><a href="#home" data-toggle="tab">Home</a></li>
-    <li><a href="#profile" data-toggle="tab">Profile</a></li>
-    <li><a href="#message" data-toggle="tab">Messages</a></li>
+    <li ng-repeat="tab in tabs">
+      <a href="#{{tab.title}}" data-toggle="tab">{{tab.title}}</a>
+    </li>
   </ul>
   <div class="tab-content" ng-transclude></div>
 </div>

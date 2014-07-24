@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html ng-app="zippy" lang="en">
+<head >
+  <meta charset="UTF-8">
+  <title></title>
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+</head>
+<body>
+  <div class="container row">
+  <input id="title" type="text" ng-model="model.title" value="My title">
+  <input id="content" type="text" ng-model="model.content" value="Content">
+  <zippy title="{{model.title}}">
+    Typed content: {{model.content}} 
+  </zippy>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.20/angular.min.js"></script>
+  <script src="zippy.js"></script>
+</body>
+</html>

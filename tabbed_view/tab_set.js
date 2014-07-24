@@ -22,7 +22,7 @@ module.directive( 'myTabSet', function() {
       this.addTab = function( domTab ) {
         var new_tab = this.createTab(domTab);
         console.debug( $scope.tabs.length );
-        new_tab.active = ( $scope.tabs.length == 0 ) ? true : false;
+        new_tab.active = ( $scope.tabs.length === 0 ) ? true : false;
 
         if ( new_tab.active ) {
           console.debug( 'active' );

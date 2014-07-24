@@ -22,6 +22,6 @@ app.directive( 'zippy', function() {
     link: function(scope, element, attrs) {
       console.debug( scope );
     },
-    template: "<div><h3 ng-click='toogle()'>{{title}}</h3><div ng-transclude ng-show='showContent()'></div></div>"
+    template: "<div><h3 style='cursor: pointer;' ng-click='toogle()'>{{title}}</h3><div ng-transclude ng-show='showContent()'></div></div>"
   };
 });

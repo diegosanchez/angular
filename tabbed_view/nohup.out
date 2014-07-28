@@ -1,0 +1,20 @@
+[6705:6705:0714/154150:ERROR:nss_util.cc(853)] After loading Root Certs, loaded==false: NSS error code: -8018
+[6705:6705:0714/154151:ERROR:component_loader.cc(138)] Failed to parse extension manifest.
+OpenGL Warning: Failed to connect to host. Make sure 3D acceleration is enabled for this VM.
+[6705:6731:0714/154152:ERROR:connection_factory_impl.cc(287)] Failed to connect to MCS endpoint with error -111
+[6705:6805:0714/154203:ERROR:get_updates_processor.cc(214)] PostClientToServerMessage() failed during GetUpdates
+[6705:6731:0714/155714:ERROR:socket_stream.cc(203)] Closing stream with result -100
+[6705:6731:0714/155714:ERROR:connection_factory_impl.cc(287)] Failed to connect to MCS endpoint with error -111
+[6705:6731:0714/161242:ERROR:socket_stream.cc(203)] Closing stream with result -100
+[6705:6731:0714/161242:ERROR:connection_factory_impl.cc(287)] Failed to connect to MCS endpoint with error -111
+[6705:6731:0714/162806:ERROR:socket_stream.cc(203)] Closing stream with result -100
+[6705:6731:0714/162806:ERROR:connection_factory_impl.cc(287)] Failed to connect to MCS endpoint with error -111
+[6705:6805:0714/164209:ERROR:get_updates_processor.cc(214)] PostClientToServerMessage() failed during GetUpdates
+[6705:6731:0714/164332:ERROR:socket_stream.cc(203)] Closing stream with result -100
+[6705:6731:0714/164332:ERROR:connection_factory_impl.cc(287)] Failed to connect to MCS endpoint with error -111
+[6705:6731:0714/165854:ERROR:socket_stream.cc(203)] Closing stream with result -100
+[6705:6731:0714/165854:ERROR:connection_factory_impl.cc(287)] Failed to connect to MCS endpoint with error -111
+[6705:6731:0714/171414:ERROR:socket_stream.cc(203)] Closing stream with result -100
+[6705:6731:0714/171414:ERROR:connection_factory_impl.cc(287)] Failed to connect to MCS endpoint with error -111
+[6705:6731:0714/172944:ERROR:socket_stream.cc(203)] Closing stream with result -100
+[6705:6731:0714/172944:ERROR:connection_factory_impl.cc(287)] Failed to connect to MCS endpoint with error -111

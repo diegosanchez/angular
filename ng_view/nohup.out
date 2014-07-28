@@ -1,0 +1,34 @@
+[4026:4026:0722/103910:ERROR:nss_util.cc(853)] After loading Root Certs, loaded==false: NSS error code: -8018
+[4026:4026:0722/103910:ERROR:component_loader.cc(138)] Failed to parse extension manifest.
+OpenGL Warning: Failed to connect to host. Make sure 3D acceleration is enabled for this VM.
+[4026:4052:0722/103911:ERROR:connection_factory_impl.cc(287)] Failed to connect to MCS endpoint with error -111
+[4026:4026:0722/103911:ERROR:desktop_window_tree_host_x11.cc(1289)] Not implemented reached in void views::DesktopWindowTreeHostX11::MapWindow(ui::WindowShowState)
+[4026:4129:0722/103922:ERROR:get_updates_processor.cc(214)] PostClientToServerMessage() failed during GetUpdates
+[4026:4052:0722/105436:ERROR:socket_stream.cc(203)] Closing stream with result -100
+[4026:4052:0722/105436:ERROR:connection_factory_impl.cc(287)] Failed to connect to MCS endpoint with error -111
+[4026:4052:0722/111000:ERROR:socket_stream.cc(203)] Closing stream with result -100
+[4026:4052:0722/111000:ERROR:connection_factory_impl.cc(287)] Failed to connect to MCS endpoint with error -111
+[4026:4052:0722/112530:ERROR:socket_stream.cc(203)] Closing stream with result -100
+[4026:4052:0722/112530:ERROR:connection_factory_impl.cc(287)] Failed to connect to MCS endpoint with error -111
+[4026:4052:0722/114050:ERROR:socket_stream.cc(203)] Closing stream with result -100
+[4026:4052:0722/114050:ERROR:connection_factory_impl.cc(287)] Failed to connect to MCS endpoint with error -111
+[6448:6448:0722/154750:ERROR:nss_util.cc(853)] After loading Root Certs, loaded==false: NSS error code: -8018
+[6448:6448:0722/154751:ERROR:component_loader.cc(138)] Failed to parse extension manifest.
+OpenGL Warning: Failed to connect to host. Make sure 3D acceleration is enabled for this VM.
+[6448:6474:0722/154751:ERROR:connection_factory_impl.cc(287)] Failed to connect to MCS endpoint with error -111
+[6448:6474:0722/154843:ERROR:connection_factory_impl.cc(287)] Failed to connect to MCS endpoint with error -7
+[6448:6548:0722/154902:ERROR:get_updates_processor.cc(214)] PostClientToServerMessage() failed during GetUpdates
+[6448:6474:0722/154929:ERROR:connection_factory_impl.cc(287)] Failed to connect to MCS endpoint with error -111
+[6448:6474:0722/160613:ERROR:socket_stream.cc(203)] Closing stream with result -100
+[6448:6474:0722/160613:ERROR:connection_factory_impl.cc(287)] Failed to connect to MCS endpoint with error -111
+[6448:6474:0722/161822:ERROR:socket_stream.cc(203)] Closing stream with result -100
+[6448:6474:0722/161822:ERROR:connection_factory_impl.cc(287)] Failed to connect to MCS endpoint with error -111
+[6448:6474:0722/163351:ERROR:socket_stream.cc(203)] Closing stream with result -100
+[6448:6474:0722/163351:ERROR:connection_factory_impl.cc(287)] Failed to connect to MCS endpoint with error -111
+[6448:6474:0722/164918:ERROR:socket_stream.cc(203)] Closing stream with result -100
+[6448:6474:0722/164918:ERROR:connection_factory_impl.cc(287)] Failed to connect to MCS endpoint with error -111
+[6448:6548:0722/164933:ERROR:get_updates_processor.cc(214)] PostClientToServerMessage() failed during GetUpdates
+[6448:6474:0722/170446:ERROR:socket_stream.cc(203)] Closing stream with result -100
+[6448:6474:0722/170446:ERROR:connection_factory_impl.cc(287)] Failed to connect to MCS endpoint with error -111
+[6448:6474:0722/172011:ERROR:socket_stream.cc(203)] Closing stream with result -100
+[6448:6474:0722/172011:ERROR:connection_factory_impl.cc(287)] Failed to connect to MCS endpoint with error -111

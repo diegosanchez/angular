@@ -1,0 +1,15 @@
+<div ng-app="myApp">
+  <div ng-controller="AvengersCtrl">
+    <input id="" type="text" ng-model="search.name" > 
+    <span ng-hide="!search.name.length" ng-class="filter_class()">Filtered: {{ search.name }}</span>
+    <table>
+      <tr ng-repeat="actor in avengers.cast | filter:search">
+        <td>{{ actor.name }}</td>
+        <td>{{ actor.character }}</td>
+      </tr>
+    </table>
+  </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.19/angular.min.js"></script>
+<script src="filters_02.js"></script>

@@ -5,7 +5,9 @@ module.exports = function(config){
     basePath : '../',
 
     files : [
-      'js/**/*.js',
+      'js/angular/angular.js',
+      'js/angular/angular-mocks.js',
+      'js/app.js',
       'test/unit/**/*.js'
     ],
 

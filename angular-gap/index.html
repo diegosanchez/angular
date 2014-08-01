@@ -10,24 +10,24 @@
 </head>
 <body ng-controller="PhoneListCtrl">
 
- <div class="container-fluid">
+ <div class="container">
     <div class="row">
-      <div class="col-md-10">
-        <!--Sidebar content-->
-
+      <div class="col-md-2">
         Search: <input ng-model="query">
-
+        Sort by:
+        <select ng-model="orderProp"  >
+          <option value="name" ng-selected='true'>Alphabetical</option>
+          <option value="age">Newest</option>
+        </select>
+        {{orderProp}}
       </div>
-    </div>
-    <div class="row">
-      <div class="col-md-10">
+      <div class="col-md-6">
         <ul class="list-group phones | filter:query">
-          <li class="list-group-item" ng-repeat="phone in phones | filter:query">
+          <li class="list-group-item" ng-repeat="phone in phones | filter:query | orderBy:orderProp ">
             {{phone.name}}
             <p>{{phone.snippet}}</p>
           </li>
         </ul>
-
       </div>
     </div>
   </div>

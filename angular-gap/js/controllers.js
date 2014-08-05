@@ -2,6 +2,7 @@ var controllers = angular.module( 'phonecatControllers', [] );
 
 controllers.controller( 'PhoneListCtrl', function($scope, $http) {
   var xhr = $http.get( 'data/phones.json').success( function(data) {
+    console.log($scope, $scope.$id);
     $scope.phones = data;
   });
 
@@ -10,8 +11,9 @@ controllers.controller( 'PhoneListCtrl', function($scope, $http) {
 });
 
 
-controllers.controller('PhoneDetailCtrl', ['$scope', '$routeParams',
-  function($scope, $routeParams) {
-    console.log($routeParams);
-    $scope.phoneId = $routeParams.phoneId;
-}]);
+controllers.controller('PhoneDetailCtrl', ['$scope', '$routeParams', '$http',
+  function($scope, $routeParams, $http) {
+    $http.get('data/phones/' + $routeParams.phoneId + '.json').success(function(data) {
+      $scope.phone = data;
+    });
+  }]);

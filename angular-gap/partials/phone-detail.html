@@ -1,4 +1,4 @@
-<img ng-src="{{phone.images[0]}}" class="phone">
+<img ng-src="{{mainImageUrl}}" class="phone">
 
 <h1>{{phone.name}}</h1>
 
@@ -6,7 +6,7 @@
 
 <ul class="phone-thumbs">
   <li ng-repeat="img in phone.images">
-    <img ng-src="{{img}}">
+    <img ng-src="{{img}}" ng-click="setMainImage(img)">
   </li>
 </ul>
 
@@ -23,4 +23,15 @@
     <span>Additional Features</span>
     <dd>{{phone.additionalFeatures}}</dd>
   </li>
+    ...
+  <li>
+    <dl>
+      <dt>Infrared</dt>
+      <dd>{{phone.connectivity.infrared | checkmark}}</dd>
+      <dt>GPS</dt>
+      <dd>{{phone.connectivity.gps | checkmark}}</dd>
+    </dl>
+  </li>
+
+
 </ul>

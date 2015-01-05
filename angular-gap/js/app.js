@@ -1,4 +1,4 @@
-var app = angular.module( 'phonecatApp', ['ngRoute', 'phonecatControllers'] );
+var app = angular.module( 'phonecatApp', ['ngRoute', 'phonecatControllers', 'ngResource'] );
 
 app.config(['$routeProvider',
   function($routeProvider) {
